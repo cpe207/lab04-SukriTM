@@ -1,5 +1,11 @@
 function arrayStringify(a) {
-  /* Your code here */
+  let text = '';
+  for (const num of a) {
+    if (typeof num === 'number') {
+      text += num;
+    }
+  }
+  return text;
 }
 
 const a1 = [1, 2, 3];
@@ -11,3 +17,4 @@ console.log(arrayStringify(a2));
 console.log(arrayStringify(a3));
 
 module.exports = arrayStringify;
+
